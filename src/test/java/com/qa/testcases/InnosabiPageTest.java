@@ -19,7 +19,7 @@ public class InnosabiPageTest extends Base {
 	InnosabiPage mainPageObj=new InnosabiPage();
 	public static ExtentHtmlReporter pathHtml;
 	public static ExtentReports exReport;
-	public static ExtentTest exLog,exLog1,exLog2,exLog3,exLog4,exLog5,exLog6,exLog7,exLog8;
+	public static ExtentTest exLog,exLog1,exLog2,exLog3,exLog4,exLog5,exLog6;
 
 	//Prerequisite steps to be executed prior executing actual TestCases
 
@@ -133,6 +133,6 @@ public class InnosabiPageTest extends Base {
 	@AfterTest
 	public void closeBrowser() {
 		exReport.flush();
-		//driver.close();
+		driver.close();
 	}
 }
