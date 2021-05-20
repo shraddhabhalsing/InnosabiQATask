@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.qa.testcases.InnosabiPageTest">
+        <methods>
+          <include name="basicSetUp"/>
+          <include name="addProductToCart"/>
+          <include name="verifyItemsInCart"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.qa.testcases.InnosabiPageTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
