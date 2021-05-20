@@ -19,7 +19,7 @@ public class InnosabiPageTest extends Base {
 	InnosabiPage mainPageObj=new InnosabiPage();
 	public static ExtentHtmlReporter pathHtml;
 	public static ExtentReports exReport;
-	public static ExtentTest exLog,exLog1,exLog2,exLog3,exLog4,exLog5,exLog6;
+	public static ExtentTest exLog,exLog1,exLog2,exLog3,exLog4;
 
 	//Prerequisite steps to be executed prior executing actual TestCases
 
@@ -117,14 +117,14 @@ public class InnosabiPageTest extends Base {
 	public void verifyItemsInCart(String Comment )
 	{
 		Boolean verifyPost=mainPageObj.verifyCartItemAndCheckOutProduct(Comment);
-		exLog6=exReport.createTest("Validate user is able to comment on idea", "Automation");
+		exLog4=exReport.createTest("Validate user is able to comment on idea", "Automation");
 		if (verifyPost)
 		{
-			exLog6.log(Status.PASS,"User is able to add comment on idea") ;
+			exLog4.log(Status.PASS,"User is able to add comment on idea") ;
 		}
 		else
 		{
-			exLog6.log(Status.FAIL,"Failed to add comment on idea") ;
+			exLog4.log(Status.FAIL,"Failed to add comment on idea") ;
 		}
 	}
 
